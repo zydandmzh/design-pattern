@@ -1,4 +1,4 @@
-package com.mzh.study.proxy;
+package com.mzh.study.proxy.controller;
 /**
  * Created by mazhihui on 2020/3/1.
  */

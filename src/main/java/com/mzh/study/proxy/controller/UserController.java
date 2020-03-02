@@ -1,9 +1,9 @@
-package com.mzh.study.proxy;
+package com.mzh.study.proxy.controller;
 
 /**
  * Created by mazhihui on 2020/3/1.
  */
-public class UserController implements IUserController{
+public class UserController implements IUserController {
     public boolean register() {
         try {
             Thread.sleep(3200L);

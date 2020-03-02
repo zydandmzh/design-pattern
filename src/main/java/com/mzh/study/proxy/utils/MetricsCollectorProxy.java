@@ -1,7 +1,7 @@
 package com.mzh.study.proxy.utils;
 
-import com.mzh.study.proxy.IUserController;
-import com.mzh.study.proxy.UserController;
+import com.mzh.study.proxy.controller.IUserController;
+import com.mzh.study.proxy.controller.UserController;
 import com.mzh.study.proxy.domain.RegisterInfo;
 
 import java.lang.reflect.InvocationHandler;
