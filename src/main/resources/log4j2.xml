@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" name="omb">
+    <Properties>
+        <Property name="FILE_PATTERN">/export/Logs/design-pattern</Property>
+        <Property name="LOG_PATTERN">%d [%t] %-5p [%c] [%L] - %m%n</Property>
+    </Properties>
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}" />
+        </Console>
+
+        <RollingRandomAccessFile name="globalFile"
+                                 immediateFlush="false" fileName="${FILE_PATTERN}/global.log"
+                                 filePattern="${FILE_PATTERN}/global-%i.log">
+            <PatternLayout pattern="${LOG_PATTERN}" />
+            <Policies>
+                <SizeBasedTriggeringPolicy size="500MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingRandomAccessFile>
+
+        <RollingRandomAccessFile name="service"
+                                 immediateFlush="false" fileName="${FILE_PATTERN}/design-pattern.log"
+                                 filePattern="${FILE_PATTERN}/design-pattern-%i.log">
+            <PatternLayout pattern="${LOG_PATTERN}" />
+            <Policies>
+                <SizeBasedTriggeringPolicy size="500MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingRandomAccessFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.mzh.study" level="info" additivity="false">
+            <AppenderRef ref="service"/>
+        </Logger>
+
+        <Root level="error">
+            <AppenderRef ref="globalFile"/>
+        </Root>
+
+    </Loggers>
+</Configuration>
