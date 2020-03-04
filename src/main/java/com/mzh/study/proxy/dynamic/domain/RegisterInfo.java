@@ -1,4 +1,4 @@
-package com.mzh.study.proxy.domain;
+package com.mzh.study.proxy.dynamic.domain;
 
 /**
  * Created by mazhihui on 2020/3/1.

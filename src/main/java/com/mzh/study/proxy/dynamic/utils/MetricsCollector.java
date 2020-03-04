@@ -1,6 +1,6 @@
-package com.mzh.study.proxy.utils;
+package com.mzh.study.proxy.dynamic.utils;
 
-import com.mzh.study.proxy.domain.RegisterInfo;
+import com.mzh.study.proxy.dynamic.domain.RegisterInfo;
 
 /**
  * Created by mazhihui on 2020/3/1.
