@@ -11,7 +11,7 @@
         <!-- jar包版本设置 -->
         <slf4j.version>1.7.21</slf4j.version>
         <log4j.version>2.11.0</log4j.version>
-        <zk.version>3.4.12</zk.version>
+        <zk.version>3.4.14</zk.version>
     </properties>
     <dependencies>
         <!-- slf4j 依赖包 -->
