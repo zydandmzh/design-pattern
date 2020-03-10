@@ -14,8 +14,10 @@ public class ChessUnitFactory extends AbstractChess{
         chessMap.put(2,new ChessUnit(2,"馬",ChessUnit.Color.RED));
         System.out.println("子类静态代码块");
     }
+    {
+        System.out.println("子类构造代码块");
+    }
     public ChessUnitFactory(){
-        super();
         System.out.println("子类构造方法");
     }
 
